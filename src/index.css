@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fondo general con degradado y textura sutil */
+body {
+  @apply bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white min-h-screen;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Contenedor principal */
+.container {
+  @apply max-w-7xl mx-auto px-6 py-10;
+}
+
+/* Encabezado */
+header {
+  @apply flex justify-between items-center mb-10;
+}
+
+header h1 {
+  @apply text-4xl font-extrabold tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-500;
+}
+
+header input {
+  @apply bg-gray-800/60 text-gray-200 px-4 py-2 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500 placeholder-gray-500;
+}
+
+header button {
+  @apply ml-4 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold px-4 py-2 rounded-xl transition-all shadow-lg;
+}
+
+/* Tarjetas de juegos */
+.card {
+  @apply bg-gray-800/70 backdrop-blur-xl border border-gray-700/60 rounded-2xl p-5 shadow-xl transition-all transform hover:scale-105 hover:shadow-2xl;
+}
+
+.card img {
+  @apply w-full h-56 object-cover rounded-xl mb-4;
+}
+
+.card h2 {
+  @apply text-xl font-semibold mb-1 text-white;
+}
+
+.card p {
+  @apply text-gray-400 mb-2;
+}
+
+.card .stars {
+  @apply text-yellow-400 mb-3;
+}
+
+/* Botones de acción */
+.btn {
+  @apply bg-indigo-600 text-white font-semibold py-2 px-4 rounded-xl hover:bg-indigo-500 transition-all mr-2;
+}
+
+.btn-secondary {
+  @apply bg-gray-700 text-gray-200 py-2 px-4 rounded-xl hover:bg-gray-600 transition-all;
+}
+
+/* Sección de estadísticas */
+.stats-box {
+  @apply bg-gray-800/60 backdrop-blur-md border border-gray-700/50 rounded-2xl p-6 shadow-lg mt-10;
+}
+
+.stats-box h3 {
+  @apply text-2xl font-semibold mb-4 text-indigo-400;
+}
+
+.stats-box p {
+  @apply text-gray-300 mb-2;
+}
